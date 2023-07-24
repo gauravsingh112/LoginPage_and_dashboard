@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 200px;
+    }
+
+    .box h2 {
+        margin-top: 0;
+        color: #007bff;
+    }
+
+    .box p {
+        margin-bottom: 0;
+    }
+
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin:295px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h2>Welcome to the Dashboard!</h2>
+    <h1>CWS Technolgy Pvt Ltd</h1>
+    <p>Mobile App and Web Development</p>
+    <p>Located in Noida</p>
+</header>
+
+<div class="container">
+    <div class="box">
+        <h2>Products</h2>
+        <p>15</p>
+    </div>
+
+    <div class="box">
+        <h2>Apps Developed</h2>
+        <p>42</p>
+    </div>
+
+    <div class="box">
+        <h2>Websites Built</h2>
+        <p>30</p>
+    </div>
+</div>
+
+<footer>
+    <p> &copy; 2023 CWS Technolggy. All rights reserved.</p>
+</footer>
+  
+  <script>
+    //Check if the user is authenticated before showing the dashboard content
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (!isLoggedIn) {
+      window.location.href = "index.html";
+    }
+    
+
+
+  </script>
+</body>
+</html>
